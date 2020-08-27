@@ -505,9 +505,9 @@
   //#define DEFAULT_Kd 440
 
   // D-Bot Auggie's
-  #define DEFAULT_Kp 14.0
-  #define DEFAULT_Ki 0.5
-  #define DEFAULT_Kd 125.0
+  #define DEFAULT_Kp 19.13
+  #define DEFAULT_Ki 1.22
+  #define DEFAULT_Kd 74.78
 
 #endif // PIDTEMP
 
@@ -1022,7 +1022,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
+#define MULTIPLE_PROBING 2
 //#define EXTRA_PROBING    1
 
 /**
@@ -1406,7 +1406,7 @@
 
 // Homing speeds (mm/m)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (4*60)
+#define HOMING_FEEDRATE_Z  (3*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
