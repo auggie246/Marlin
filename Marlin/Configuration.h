@@ -493,9 +493,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
       // D-Bot Auggie's
-      #define DEFAULT_Kp 18.44
-      #define DEFAULT_Ki 1.11
-      #define DEFAULT_Kd 76.53
+      #define DEFAULT_Kp 12.25
+      #define DEFAULT_Ki 0.70
+      #define DEFAULT_Kd 53.46
   #endif
 #endif // PIDTEMP
 
