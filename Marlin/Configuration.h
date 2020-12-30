@@ -743,7 +743,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.8, 100.8, 1600, 808 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100.6, 100.6, 1605, 809.8 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -993,7 +993,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41.8, 32.2, -2.74 }
+#define NOZZLE_TO_PROBE_OFFSET { -41.8, 32.2, -2.85 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1534,15 +1534,15 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 283.44
-  #define XY_DIAG_BD 280.26
-  #define XY_SIDE_AD 209.48
+  #define XY_DIAG_AC 283.72
+  #define XY_DIAG_BD 284.76
+  #define XY_SIDE_AD 200.74
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
-  #define XY_SKEW_FACTOR 0.011345
+  //#define XY_SKEW_FACTOR 0
 
-  #define SKEW_CORRECTION_FOR_Z
+  //#define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
     #define XZ_DIAG_AC ‬282.44
     #define XZ_DIAG_BD 282.84
