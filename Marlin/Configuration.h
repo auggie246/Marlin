@@ -1544,7 +1544,7 @@
 
   #define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
-    #define XZ_DIAG_AC ‬284.42
+    #define XZ_DIAG_AC 284.42
     #define XZ_DIAG_BD 282.04
     #define YZ_DIAG_AC 284.32
     #define YZ_DIAG_BD 283.42
