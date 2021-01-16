@@ -993,14 +993,14 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43.5, 29, -2.8 }
+#define NOZZLE_TO_PROBE_OFFSET { -43.5, 29, -2.94 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
 #define PROBING_MARGIN 0
 
 // X and Y axis travel speed (mm/min) between probes
-#define XY_PROBE_SPEED (133*60)
+#define XY_PROBE_SPEED (120*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST (3*60)
@@ -1045,7 +1045,7 @@
  * A total of 3 or more adds more slow probes, taking the average.
  */
 #define MULTIPLE_PROBING 2
-#define EXTRA_PROBING    1
+#define EXTRA_PROBING    0
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1409,7 +1409,7 @@
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 10              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 8      // Don't use more than 15 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 9      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle
@@ -1534,9 +1534,9 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 283.72
-  #define XY_DIAG_BD 284.76
-  #define XY_SIDE_AD 200.74
+  #define XY_DIAG_AC 281.32
+  #define XY_DIAG_BD 282.48
+  #define XY_SIDE_AD 199.64
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
@@ -1544,11 +1544,11 @@
 
   #define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
-    #define XZ_DIAG_AC 284.42
-    #define XZ_DIAG_BD 282.04
-    #define YZ_DIAG_AC 284.32
-    #define YZ_DIAG_BD 283.42
-    #define YZ_SIDE_AD 200.8
+    #define XZ_DIAG_AC 283.64
+    #define XZ_DIAG_BD 282.96
+    #define YZ_DIAG_AC 283.28
+    #define YZ_DIAG_BD 282.88
+    #define YZ_SIDE_AD 199.86
     //#define XZ_SKEW_FACTOR -0.001422
     //#define YZ_SKEW_FACTOR 0.002273
   #endif
